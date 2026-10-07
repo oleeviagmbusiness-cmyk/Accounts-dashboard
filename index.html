@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oleevia Portal | Banks & Compliance</title>
+  <title>Oleevia Portal</title>
   <meta name="description" content="Oleevia Grameen Credits corporate gateway for banking and statutory compliance portals.">
   
   <!-- Modern Typography (Inter) -->
@@ -51,7 +51,7 @@
 
     .container {
       width: 100%;
-      max-width: 1080px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
       padding-left: 24px;
@@ -65,7 +65,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 48px 0 24px;
+      padding: 60px 0 30px;
     }
 
     /* ==========================================================================
@@ -76,7 +76,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin-bottom: 44px;
+      margin-bottom: 50px;
     }
 
     .brand-logo-link {
@@ -84,7 +84,6 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      margin-bottom: 16px;
       transition: transform var(--transition-normal);
     }
 
@@ -93,55 +92,11 @@
     }
 
     .brand-logo {
-      width: 360px;
-      max-width: 85vw;
+      width: 380px;
+      max-width: 88vw;
       height: auto;
       display: block;
-      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8125rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: rgba(1, 71, 144, 0.8);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 6px 16px;
-      border-radius: var(--radius-full);
-      margin-bottom: 12px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
-    }
-
-    .hero-badge-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background-color: #38bdf8;
-      box-shadow: 0 0 8px #38bdf8;
-    }
-
-    .hero-title {
-      font-size: 2.15rem;
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.025em;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-      margin-bottom: 8px;
-    }
-
-    .hero-subtitle {
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.92);
-      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
-      max-width: 520px;
+      filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
     }
 
     /* ==========================================================================
@@ -152,22 +107,22 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 28px;
       width: 100%;
-      max-width: 880px;
+      max-width: 760px;
       margin-bottom: 32px;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 640px) {
       .cards-grid {
         grid-template-columns: 1fr;
         gap: 20px;
       }
 
       .portal-main {
-        padding: 32px 0 20px;
+        padding: 40px 0 24px;
       }
 
-      .hero-title {
-        font-size: 1.75rem;
+      .brand-hero {
+        margin-bottom: 36px;
       }
     }
 
@@ -177,13 +132,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 250px;
+      min-height: 180px;
       background-color: rgba(255, 255, 255, 0.60);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border: 1px solid rgba(255, 255, 255, 0.65);
       border-radius: var(--radius-lg);
-      padding: 32px 30px;
+      padding: 26px 26px;
       text-decoration: none;
       color: #0f172a;
       box-shadow: 0 14px 34px -4px rgba(1, 71, 144, 0.14), 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -218,17 +173,17 @@
       height: 7px;
     }
 
-    /* Card Top Header */
+    /* Card Icon Header */
     .card-head {
       display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 20px;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 24px;
     }
 
     .card-icon-wrapper {
-      width: 58px;
-      height: 58px;
+      width: 54px;
+      height: 54px;
       border-radius: var(--radius-md);
       background: var(--card-icon-bg, rgba(1, 71, 144, 0.1));
       border: 1px solid var(--card-icon-border, rgba(1, 71, 144, 0.18));
@@ -247,31 +202,24 @@
     }
 
     .card-icon-wrapper svg {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
     }
 
-    .card-badge {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 5px 12px;
-      border-radius: var(--radius-full);
-      background: rgba(255, 255, 255, 0.8);
-      color: var(--card-accent, var(--brand-primary));
-      border: 1px solid rgba(255, 255, 255, 0.95);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    /* Card Bottom (Title + Arrow) */
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    /* Card Body */
     .card-title {
-      font-size: 1.65rem;
+      font-size: 1.55rem;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.02em;
-      line-height: 1.25;
-      margin-bottom: 6px;
+      line-height: 1.2;
+      margin: 0;
       transition: color var(--transition-fast);
     }
 
@@ -279,41 +227,9 @@
       color: var(--card-accent, var(--brand-primary));
     }
 
-    .card-category {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #334155;
-      margin-bottom: 10px;
-    }
-
-    .card-desc {
-      font-size: 0.9rem;
-      color: #475569;
-      line-height: 1.5;
-    }
-
-    /* Card Bottom Action */
-    .card-action-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 24px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(0, 0, 0, 0.07);
-    }
-
-    .action-text {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--card-accent, var(--brand-primary));
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
     .action-arrow-circle {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
       background: rgba(1, 71, 144, 0.08);
       border: 1px solid rgba(1, 71, 144, 0.14);
@@ -332,8 +248,8 @@
     }
 
     .action-arrow-circle svg {
-      width: 17px;
-      height: 17px;
+      width: 18px;
+      height: 18px;
     }
 
     /* ==========================================================================
@@ -381,43 +297,31 @@
         <a href="index.html" class="brand-logo-link" aria-label="Oleevia Home">
           <img src="oleevia-logo-white-text.png" alt="Oleevia" class="brand-logo">
         </a>
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Corporate Services Gateway
-        </div>
-        <h1 class="hero-title">Select Portal</h1>
-        <p class="hero-subtitle">Choose between Corporate Banking and Statutory Compliance to proceed.</p>
       </header>
 
-      <!-- TWO CARDS GRID: BANKS & COMPLIANCE -->
-      <section class="cards-grid" aria-label="Portal Selection">
+      <!-- TWO CARDS: BANKS & COMPLIANCE -->
+      <section class="cards-grid" aria-label="Portal Navigation">
 
         <!-- CARD 1: BANKS (LINKED TO BANKING DASHBOARD) -->
-        <a href="banks.html" class="portal-card" style="--card-accent: #014790; --card-icon-bg: rgba(1, 71, 144, 0.1); --card-icon-border: rgba(1, 71, 144, 0.2);" title="Open Banks Dashboard">
-          <div>
-            <div class="card-head">
-              <div class="card-icon-wrapper">
-                <!-- Bank Building / Finance Icon -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M3 21h18"/>
-                  <path d="M3 10h18"/>
-                  <path d="M5 6l7-3 7 3"/>
-                  <path d="M4 10v11"/>
-                  <path d="M20 10v11"/>
-                  <path d="M8 14v4"/>
-                  <path d="M12 14v4"/>
-                  <path d="M16 14v4"/>
-                </svg>
-              </div>
-              <span class="card-badge">11 Netbanking Portals</span>
+        <a href="banks.html" class="portal-card" style="--card-accent: #014790; --card-icon-bg: rgba(1, 71, 144, 0.1); --card-icon-border: rgba(1, 71, 144, 0.2);" title="Banks">
+          <div class="card-head">
+            <div class="card-icon-wrapper">
+              <!-- Bank Building / Finance Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"/>
+                <path d="M3 10h18"/>
+                <path d="M5 6l7-3 7 3"/>
+                <path d="M4 10v11"/>
+                <path d="M20 10v11"/>
+                <path d="M8 14v4"/>
+                <path d="M12 14v4"/>
+                <path d="M16 14v4"/>
+              </svg>
             </div>
-            <h2 class="card-title">Banks</h2>
-            <div class="card-category">Corporate Accounts & Netbanking</div>
-            <p class="card-desc">Access Axis neo, Yes Bank, RBL, ESAF, HDFC corporate & personal, CSB, Federal Bank (FED one & FED net), and IDFC First.</p>
           </div>
 
-          <div class="card-action-bar">
-            <span class="action-text">Open Banking Dashboard</span>
+          <div class="card-bottom">
+            <h2 class="card-title">Banks</h2>
             <div class="action-arrow-circle" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"/>
@@ -428,25 +332,19 @@
         </a>
 
         <!-- CARD 2: COMPLIANCE -->
-        <a href="compliance.html" class="portal-card" style="--card-accent: #dd052e; --card-icon-bg: rgba(221, 5, 46, 0.1); --card-icon-border: rgba(221, 5, 46, 0.2);" title="Open Compliance Portal">
-          <div>
-            <div class="card-head">
-              <div class="card-icon-wrapper">
-                <!-- Shield / Regulatory Compliance Icon -->
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="M9 12l2 2 4-4"/>
-                </svg>
-              </div>
-              <span class="card-badge" style="color: #dd052e;">Statutory Services</span>
+        <a href="compliance.html" class="portal-card" style="--card-accent: #dd052e; --card-icon-bg: rgba(221, 5, 46, 0.1); --card-icon-border: rgba(221, 5, 46, 0.2);" title="Compliance">
+          <div class="card-head">
+            <div class="card-icon-wrapper">
+              <!-- Shield / Regulatory Compliance Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
             </div>
-            <h2 class="card-title">Compliance</h2>
-            <div class="card-category">Regulatory & Statutory Portals</div>
-            <p class="card-desc">Access MCA / ROC filings, GST returns, Income Tax & TDS portals, and RBI regulatory directives & reporting.</p>
           </div>
 
-          <div class="card-action-bar">
-            <span class="action-text" style="color: #dd052e;">Open Compliance Portal</span>
+          <div class="card-bottom">
+            <h2 class="card-title">Compliance</h2>
             <div class="action-arrow-circle" aria-hidden="true" style="color: #dd052e; background: rgba(221, 5, 46, 0.08); border-color: rgba(221, 5, 46, 0.16);">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"/>
