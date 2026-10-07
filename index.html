@@ -239,7 +239,7 @@
       }
     }
 
-    /* Bank Card Style - Transparent */
+    /* Bank Card Style - Blue Opacity Glass Matched to Background */
     .bank-card {
       position: relative;
       display: flex;
@@ -247,24 +247,24 @@
       justify-content: space-between;
       gap: 16px;
       min-height: 148px;
-      background-color: transparent;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: linear-gradient(135deg, rgba(14, 52, 98, 0.42) 0%, rgba(6, 32, 68, 0.52) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(114, 195, 245, 0.32);
       border-radius: var(--radius-lg);
       padding: 20px 22px;
       text-decoration: none;
-      color: inherit;
-      box-shadow: none;
+      color: #ffffff;
+      box-shadow: 0 10px 30px -4px rgba(2, 28, 62, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.15);
       transition: all var(--transition-normal);
       overflow: hidden;
       outline: none;
     }
 
     [data-theme="dark"] .bank-card {
-      background-color: transparent;
-      border-color: rgba(255, 255, 255, 0.2);
-      box-shadow: none;
+      background: linear-gradient(135deg, rgba(8, 28, 56, 0.6) 0%, rgba(4, 16, 36, 0.72) 100%);
+      border-color: rgba(114, 195, 245, 0.2);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
     }
 
     /* Top bank accent strip */
@@ -276,23 +276,21 @@
       right: 0;
       height: 3px;
       background: var(--bank-accent, var(--brand-primary));
-      opacity: 0.85;
+      opacity: 0.9;
       transition: height var(--transition-fast), opacity var(--transition-fast);
     }
 
     .bank-card:hover {
       transform: translateY(-4px);
-      background-color: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-color: rgba(255, 255, 255, 0.75);
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      background: linear-gradient(135deg, rgba(18, 68, 128, 0.58) 0%, rgba(9, 44, 92, 0.68) 100%);
+      border-color: rgba(114, 195, 245, 0.65);
+      box-shadow: 0 18px 40px -6px rgba(1, 45, 95, 0.45), 0 0 24px rgba(114, 195, 245, 0.2);
     }
 
     [data-theme="dark"] .bank-card:hover {
-      background-color: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.5);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      background: linear-gradient(135deg, rgba(14, 46, 88, 0.75) 0%, rgba(6, 26, 56, 0.85) 100%);
+      border-color: rgba(114, 195, 245, 0.5);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.7), 0 0 20px -4px var(--bank-accent, var(--brand-primary));
     }
 
     .bank-card:hover::before {
@@ -384,20 +382,20 @@
       width: 32px;
       height: 32px;
       border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.35);
+      background-color: rgba(114, 195, 245, 0.2);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.45);
-      color: var(--bank-accent, var(--brand-primary));
+      border: 1px solid rgba(114, 195, 245, 0.4);
+      color: #ffffff;
       flex-shrink: 0;
       transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
     }
 
     .bank-card:hover .action-arrow {
       transform: translate(2px, -2px);
-      background-color: var(--bank-accent, var(--brand-primary));
+      background-color: var(--bank-accent, #38bdf8);
       color: #ffffff;
-      border-color: var(--bank-accent, var(--brand-primary));
+      border-color: var(--bank-accent, #38bdf8);
     }
 
     .action-arrow svg {
@@ -420,20 +418,17 @@
     .bank-card-title {
       font-size: 1.125rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: #ffffff;
       line-height: 1.3;
       letter-spacing: -0.01em;
-      text-shadow: 0 1px 3px rgba(255, 255, 255, 0.85);
-      transition: color var(--transition-fast);
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+      transition: color var(--transition-fast), text-shadow var(--transition-fast);
       margin: 0;
     }
 
-    [data-theme="dark"] .bank-card-title {
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
-    }
-
     .bank-card:hover .bank-card-title {
-      color: var(--bank-accent, var(--brand-primary));
+      color: #ffffff;
+      text-shadow: 0 2px 8px rgba(114, 195, 245, 0.8);
     }
 
     /* Screen reader only utility */
