@@ -239,9 +239,35 @@
       border-color: var(--card-accent, var(--brand-primary));
     }
 
-    .action-arrow-circle svg {
-      width: 18px;
-      height: 18px;
+    /* ==========================================================================
+       PORTAL FOOTER
+       ========================================================================== */
+    .portal-footer {
+      text-align: center;
+      margin-top: 10px;
+      padding: 12px 16px 20px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .portal-footer-text {
+      color: rgba(255, 255, 255, 0.60);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+
+    .portal-footer-text a {
+      color: rgba(255, 255, 255, 0.60);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color var(--transition-fast), opacity var(--transition-fast);
+    }
+
+    .portal-footer-text a:hover {
+      color: rgba(255, 255, 255, 0.95);
     }
 
   </style>
@@ -299,6 +325,13 @@
         </a>
 
       </section>
+
+      <!-- PORTAL FOOTER -->
+      <footer class="portal-footer">
+        <p class="portal-footer-text">
+          For more contact <a href="mailto:itsupport@oleeviagroup.com">itsupport@oleeviagroup.com</a>
+        </p>
+      </footer>
 
     </div>
   </main>
