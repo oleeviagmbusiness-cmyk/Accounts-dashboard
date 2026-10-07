@@ -173,37 +173,68 @@
       height: 7px;
     }
 
-    /* Card Icon Header */
+    /* Card Icon & Logo Header */
     .card-head {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       margin-bottom: 24px;
+      height: 74px;
+    }
+
+    .card-logo-box {
+      height: 72px;
+      width: auto;
+      max-width: 140px;
+      border-radius: var(--radius-md);
+      background: #ffffff;
+      border: 1px solid rgba(1, 71, 144, 0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px 8px;
+      box-shadow: 0 4px 12px rgba(1, 71, 144, 0.08);
+      overflow: hidden;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .portal-card:hover .card-logo-box {
+      transform: scale(1.05);
+      border-color: var(--card-accent, var(--brand-primary));
+      box-shadow: 0 6px 18px rgba(1, 71, 144, 0.2);
+    }
+
+    .card-custom-logo {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .card-icon-wrapper {
-      width: 54px;
-      height: 54px;
+      width: 72px;
+      height: 72px;
       border-radius: var(--radius-md);
-      background: var(--card-icon-bg, rgba(1, 71, 144, 0.1));
-      border: 1px solid var(--card-icon-border, rgba(1, 71, 144, 0.18));
+      background: var(--card-icon-bg, rgba(221, 5, 46, 0.08));
+      border: 1px solid var(--card-icon-border, rgba(221, 5, 46, 0.18));
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--card-accent, var(--brand-primary));
+      color: var(--card-accent, var(--brand-accent));
       transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
     }
 
     .portal-card:hover .card-icon-wrapper {
-      transform: scale(1.06);
-      background: var(--card-accent, var(--brand-primary));
+      transform: scale(1.05);
+      background: var(--card-accent, var(--brand-accent));
       color: #ffffff;
-      border-color: var(--card-accent, var(--brand-primary));
+      border-color: var(--card-accent, var(--brand-accent));
     }
 
     .card-icon-wrapper svg {
-      width: 28px;
-      height: 28px;
+      width: 36px;
+      height: 36px;
     }
 
     /* Card Bottom (Title + Arrow) */
@@ -273,20 +304,10 @@
       <section class="cards-grid" aria-label="Portal Navigation">
 
         <!-- CARD 1: BANKS (LINKED TO BANKING DASHBOARD) -->
-        <a href="banks.html" class="portal-card" style="--card-accent: #014790; --card-icon-bg: rgba(1, 71, 144, 0.1); --card-icon-border: rgba(1, 71, 144, 0.2);" title="Banks">
+        <a href="banks.html" class="portal-card" style="--card-accent: #014790;" title="Banks">
           <div class="card-head">
-            <div class="card-icon-wrapper">
-              <!-- Bank Building / Finance Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 21h18"/>
-                <path d="M3 10h18"/>
-                <path d="M5 6l7-3 7 3"/>
-                <path d="M4 10v11"/>
-                <path d="M20 10v11"/>
-                <path d="M8 14v4"/>
-                <path d="M12 14v4"/>
-                <path d="M16 14v4"/>
-              </svg>
+            <div class="card-logo-box">
+              <img src="banks-logo.png" alt="Banks" class="card-custom-logo">
             </div>
           </div>
 
